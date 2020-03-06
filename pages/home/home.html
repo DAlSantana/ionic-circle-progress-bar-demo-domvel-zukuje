@@ -1,0 +1,31 @@
+<ion-header>
+	<ion-navbar color="primary">
+		<ion-title>Progress</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<div class="flex-container">
+		<div class="flex progress">
+			<circle-progress [percent]="progress" [showSubtitle]="true" [subtitle]="progressText"></circle-progress>
+		</div>
+		<div class="flex">
+			<ion-list no-lines>
+				<ion-item>
+					<ion-icon name="download" item-start></ion-icon>
+					<h2>One:</h2>
+					<p item-end>Foo foo foofoo.</p>
+				</ion-item>
+				<ion-item>
+					<ion-icon name="download" item-start></ion-icon>
+					<h2>Two:</h2>
+					<p item-end>Foofoo foofoofoo.</p>
+				</ion-item>
+			</ion-list>
+		</div>
+	</div>
+</ion-content>
+
+<ion-footer padding>
+	<button ion-button large full (click)="start()">Start</button>
+</ion-footer>

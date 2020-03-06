@@ -1,0 +1,23 @@
+page-home {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    @media screen and (max-width: 600px) {
+      & {
+        flex-wrap: wrap;
+      }
+      .progress {
+        height: unset;
+      }
+    }
+
+    .progress {
+      height: 100%;
+    }
+  }
+}
